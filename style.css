@@ -7,9 +7,17 @@ body {
     width: 100%;
     font-family: 'Poppins', sans-serif;
     color: rgb(19, 18, 28);
-    overflow-x: hidden
+    overflow-x: hidden;
+    margin: 0;
   }
   
+@media screen and (max-width: 600px) {
+  .navbaritem, .navbaritemmiddle, .navbaritemright{display: none;}
+}
+@media screen and (min-width: 600px) {
+  .dropdown, .dropbtn, .dropdown-content {display: none;}
+}
+
   a:hover, a:visited, a:link, a:active
   {
       text-decoration: none;

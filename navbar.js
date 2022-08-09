@@ -10,16 +10,16 @@ if (width > 500) {
   <div style="position:absolute; top:6px; right:2%; width:30%">
       <a class="navbaritemright" href="account">Profile</a>
   </div>
-    <div style="position:absolute; top:0px; left:0px; z-index:-1;" class="navbarsquare"></div>`;
+    <div style="position:absolute; top:0px; left:0px; z-index:-1;" class="navbarsquare"></div><div style="position:absolute;top:-3px"class="dropdown">
+    <button onclick="dropdown()" class="dropbtn">Menu</button>
+    <div id="myDropdown" class="dropdown-content">
+      <a href="/">Home</a>
+      <a href="zone">The Zone</a>
+      <a href="about">About</a>
+      <a href="account">Account</a>
+    </div>`;
 } else {
-  navbarNew.innerHTML = `<div style="position:absolute;top:-3px"class="dropdown">
-  <button onclick="dropdown()" class="dropbtn">Menu</button>
-  <div id="myDropdown" class="dropdown-content">
-    <a href="/">Home</a>
-    <a href="zone">The Zone</a>
-    <a href="about">About</a>
-    <a href="account">Account</a>
-  </div>
+  navbarNew.innerHTML = `
 </div><div style="position:absolute; top:0px; left:0px; z-index:-1;" class="navbarsquare"></div>`;
 }
 function dropdown() {
